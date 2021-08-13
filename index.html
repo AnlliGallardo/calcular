@@ -20,9 +20,9 @@
         id="pills-tab"
         role="tablist"
       >
-        <li class="nav-item" role="presentation">
+        <li class="nav-item"id = "ini" role="presentation">
           <a
-            class="nav-link"
+            class="nav-link active"
             id="pills-home-tab"
             data-bs-toggle="pill"
             data-bs-target="#pills-home"
@@ -33,9 +33,9 @@
             >Inicio</a
           >
         </li>
-        <li class="nav-item" role="presentation">
+        <li class="nav-item" id = "li" role="presentation">
           <a
-            class="nav-link active"
+            class="nav-link "
             id="pills-form-tab"
             data-bs-toggle="pill"
             data-bs-target="#pills-form"
@@ -50,7 +50,7 @@
     </header>
 
     <div class="tab-content text-primary" id="pills-tabContent ">
-      <div class="tab-pane fade " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+      <div class="tab-pane fade show active container" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
           <h2 class="m-4"></h2>
       
     <div class="container">
@@ -58,24 +58,27 @@
         <h1 class="titulo">Calculadora de IMC: Índice de Masa Corporal</h1>
         <div class="Calcular">
           <h3 class="cal">Sexo</h3>
+      
           <div class="fema">
-            <img id = "femC"class="color" src="https://icones.pro/wp-content/uploads/2021/03/symbole-feminin-icone-violette.png" />
-            <img id = "femG" src="https://c8.alamy.com/compes/2bd3fg0/icono-femenino-simbolo-de-informacion-publica-2bd3fg0.jpg" />
-            <img id = "masC" class="color" src="https://image.freepik.com/vector-gratis/hombre-negocios-hombre-icono-masculino_24877-11461.jpg" />
-            <img id = "masG" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBuLp3EPGBY0HkUNEdUpvLuqrhB2rDhjht3g&usqp=CAU" />
+            <img id = "femC"class="color" src="./images/femenino-color.jpg" />
+            <img id = "femG" src="./images/femenino-gris.jpg" />
+            <img id = "masC" class="color" src="./images/masculino-color.jpg" />
+            <img id = "masG" src="./images/masculino-gris.jpg" />
+          
           </div>
           <h3>Nombre</h3>
           <input type="text" id="nom" required/>
           <h3>Edad</h3>
           <input type="number" id="edad" />
           <h3>Peso</h3>
-          <input type="number" id="peso" placeholder="KG" requerid/>
+          <input type="number" id="peso" placeholder="KG" required />
           <h3>Altura</h3>
-          <input type="number" id="altura" placeholder="CM" requerid/>
+          <input type="number" id="altura" placeholder="CM" required/>
         </div>
         <button id="btn">CALCULAR IMC</button>
       </div>
       <div class="res">
+        <div class="headerRes">
         <h1 class="resulta">Resultado</h1>
         <h1 class="resultado"></h1>
         <input class="ran" />
@@ -84,13 +87,13 @@
             id="rango"
             type="range"
             value="10"
-            min="1"
-            max="20"
-            oninput="this.nextElementSibling.value = this.value"
+            min="18.5"
+            max="40"
+            oninput=""
           />
-          <output>10</output>
+          <output></output>
         </div>
-      
+      </div>
         <div class="img">
           <img src="./images/bajo.jpg" />
           <h1>Bajo Peso</h1>
@@ -106,7 +109,7 @@
     </div>
     <br />
     </div>
-    <div class="tab-pane fade show active container" id="pills-form" role="tabpanel"
+    <div class="tab-pane fade " id="pills-form" role="tabpanel"
             aria-labelledby="pills-form-tab">
             <h2 class="m-4">Estadística</h2>
     
@@ -116,33 +119,32 @@
           <tr>
             <th scope="col">#</th>
             <th scope="col">Nombre</th>
-            <th scope="col">Apellido</th>
             <th scope="col">Edad</th>
             <th scope="col">Sexo</th>
             <th scope="col">Peso</th>
             <th scope="col">Altura</th>
+            <th scope="col">IMC</th>
           </tr>
         </thead>
         <tbody id="items">
-          <template id="template-card">
-        <tr >
-         
-          <th scope="row">1</th>
-          <td id ="nomT"></td>
-          <td id ="edadT"></td>
-          <td id ="sexT"></td>
-          <td id = "pesoT"></td>
-          <td id = "alturaT"></td>
-          <td id = "incT"></td>
-      </template>
-        </tr>
-      </tbody>
-    </table>
-    <button id = "listar"></button>
-    <button id = "li">asda</button>
-  </div>
-  </div>
-
+            <template id="template-card">
+          <tr >
+           
+            <th scope="row">1</th>
+            <td id ="nomT"></td>
+            <td id ="edadT"></td>
+            <td id ="sexT"></td>
+            <td id = "pesoT"></td>
+            <td id = "alturaT"></td>
+            <td id = "imcT"></td>
+        </template>
+          </tr>
+        </tbody>
+      </table>
+      <button id = "listar"></button>
+      <button >asda</button>
+    </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"

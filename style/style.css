@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: whitesmoke;
+    
+}
+
+.Calcular img {
+    width: 25px;
+    height: 50px;
+    margin-top: 14px;
+    margin-left: 20px;
+}
+
+.img img {
+    align-items: right;
+    justify-items: right;
+    margin-top: 10px;
+    height: 30px;
+    margin-left: 20px;
+    
+}
+
+.color {
+    display: none;
+}
+
+.titulo {
+    font-style: block;
+}
+
+.Calcular {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+.res {
+    display: none;
+    
+}
+
+.rango input[type='rango'] {
+    -webkit-appearance: none;
+    margin: 0;
+    padding: 0 5px;
+}
+
+.rango input[type='range']::-webkit-slider-thumb {
+    cursor: pointer;
+    -webkit-appearance: none;
+    background:white;
+    border-radius: 50%;
+    height:10px;
+    width:10px;
+}
+
+#rango {
+    background: linear-gradient(90deg, yellow, blue, gray, black);
+    width: 250px;
+}
+
+.Calcular input {
+    width: 100px;
+    height: 25px;
+    vertical-align: middle;
+    margin-top: 22px;
+    margin-left: 20px;
+    border-color: whitesmoke;
+    border-style: double;
+    text-align: right;
+}
+
+.Calcular h3 {
+    text-align: right;
+    font-size: 22px;
+    color: black;
+    
+}
+
+.calContainer #btn {
+    align-items: center;
+    display: block;
+    height: 50px;
+    width: 200px;
+    margin: 0 auto;
+    background-color: rgb(1, 241, 1);
+    font-size: 16px;
+    margin-left: 490px;
+    border-color: white;
+    color: white;
+    text-align: center;
+}
+
+.calContainer {
+    align-items: center;
+    text-align: left;
+    font-weight: block;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+.calContainer h1{
+    text-align: center;
+    color: yellowgreen;
+    
+}
+
+.img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+.img h1 {
+    margin-left: -470px;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.ran {
+    background: linear-gradient(90deg, yellowgreen, blue, gray,black);
+    width: 250px;
+}

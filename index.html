@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <title>Calculadora IMC</title>
+  </head>
+  <body>
+    <header class="container-fluid position-sticky top-5 bg-dark">
+      <ul
+        class="nav nav-pills mb-3 py-3 container"
+        id="pills-tab"
+        role="tablist"
+      >
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="pills-home-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-home"
+            type="button"
+            role="tab"
+            aria-controls="pills-home"
+            aria-selected="true"
+            >Inicio</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link active"
+            id="pills-form-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-form"
+            type="button"
+            role="tab"
+            aria-controls="pills-form"
+            aria-selected="false"
+            >Estadística</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <div class="tab-content text-primary" id="pills-tabContent ">
+      <div class="tab-pane fade " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <h2 class="m-4"></h2>
+      
+    <div class="container">
+      <div class="calContainer">
+        <h1 class="titulo">Calculadora de IMC: Índice de Masa Corporal</h1>
+        <div class="Calcular">
+          <h3 class="cal">Sexo</h3>
+          <div class="fema">
+            <img id = "femC"class="color" src="https://icones.pro/wp-content/uploads/2021/03/symbole-feminin-icone-violette.png" />
+            <img id = "femG" src="https://c8.alamy.com/compes/2bd3fg0/icono-femenino-simbolo-de-informacion-publica-2bd3fg0.jpg" />
+            <img id = "masC" class="color" src="https://image.freepik.com/vector-gratis/hombre-negocios-hombre-icono-masculino_24877-11461.jpg" />
+            <img id = "masG" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBuLp3EPGBY0HkUNEdUpvLuqrhB2rDhjht3g&usqp=CAU" />
+          </div>
+          <h3>Nombre</h3>
+          <input type="text" id="nom" required/>
+          <h3>Edad</h3>
+          <input type="number" id="edad" />
+          <h3>Peso</h3>
+          <input type="number" id="peso" placeholder="KG" requerid/>
+          <h3>Altura</h3>
+          <input type="number" id="altura" placeholder="CM" requerid/>
+        </div>
+        <button id="btn">CALCULAR IMC</button>
+      </div>
+      <div class="res">
+        <h1 class="resulta">Resultado</h1>
+        <h1 class="resultado"></h1>
+        <input class="ran" />
+        <div class="rango">
+          <input
+            id="rango"
+            type="range"
+            value="10"
+            min="1"
+            max="20"
+            oninput="this.nextElementSibling.value = this.value"
+          />
+          <output>10</output>
+        </div>
+      
+        <div class="img">
+          <img src="./images/bajo.jpg" />
+          <h1>Bajo Peso</h1>
+          <img src="./images/saludable.jpg" />
+          <h1>Saludable</h1>
+          <img src="./images/gordo.jpg" />
+          <h1>Exceso de Peso</h1>
+          <img src="./images/exceso.jpg" />
+          <h1>Obeso</h1>
+        </div>
+        <button id="volver">Volver</button>
+      </div>
+    </div>
+    <br />
+    </div>
+    <div class="tab-pane fade show active container" id="pills-form" role="tabpanel"
+            aria-labelledby="pills-form-tab">
+            <h2 class="m-4">Estadística</h2>
+    
+    <div class="form">
+      <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Edad</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Peso</th>
+            <th scope="col">Altura</th>
+          </tr>
+        </thead>
+        <tbody id="items">
+          <template id="template-card">
+        <tr >
+         
+          <th scope="row">1</th>
+          <td id ="nomT"></td>
+          <td id ="edadT"></td>
+          <td id ="sexT"></td>
+          <td id = "pesoT"></td>
+          <td id = "alturaT"></td>
+          <td id = "incT"></td>
+      </template>
+        </tr>
+      </tbody>
+    </table>
+    <button id = "listar"></button>
+    <button id = "li">asda</button>
+  </div>
+  </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script/script.js"></script>
+  </body>
+</html>

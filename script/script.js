@@ -120,10 +120,10 @@ const crearRegistro = (sex, nom, edad, altura, peso, imc) => {
         imc: imc
     }
 
-if (registro.length > 3){
-    registro.shift()
-    arreglo.push(registro);
-}
+// if (registro.length > 3){
+//     registro.shift()
+//     arreglo.push(registro);
+// }
     arreglo.push(registro);
 
     if (arreglo.length >= 16) {
